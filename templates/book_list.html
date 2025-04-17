@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Book List - library</h1>
+    <ol>
+      {% for book in books %}
+        <li>{{ book.title }} - {{ book.author }} - 
+            {{ book.published_date }}</li>
+      {% endfor %}
+    </ol>
+</body>
+</html>
